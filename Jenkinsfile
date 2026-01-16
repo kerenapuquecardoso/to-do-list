@@ -3,7 +3,7 @@ pipeline{
   stages {
     stage('Build Docker Image'){
       steps {
-        echo "Hello Wolrd"
+        sh 'dokcer build -t to-do-list .'
       }
     }
   }
